@@ -1,0 +1,67 @@
+#[Information]
+site_name: Gansche's TechStack
+site_url: https://Gansche.github.io
+site_author: Gansche
+repo_url: https://github.com/Gansche/Gansche.github.io
+repo_name: Gansche/Gansche.github.io
+
+#[Navigation]
+nav:
+  - Course Notes:
+    - Computer Organization:
+      - cour_note/ComputerOrganization/Chapter00.md
+
+#[UI]
+theme: 
+    name: material
+    language: zh
+    icon: 
+      repo: fontawesome/brands/git-alt
+      logo: material/notebook-outline
+      view: material/eyes
+      admonition:
+      #  <type>: <icon>
+    palette:
+        #Palette toggle for light mode
+        - scheme: default
+          toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+        #Palette togglr for dark mode
+        - scheme: slate
+          toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+    features:
+      - navigation.instant
+      - navigation.tracking
+      - navigation.tabs
+      - navigation.sections
+      - navigation.indexes 
+      - navigation.top
+      - search.suggest
+      - search.highlight
+      - search.share
+
+#[Plugin]
+plugins:
+  - search
+  #- encryptcontent:
+  #      global_password: '123456'
+
+#[Copyright]
+copyright: Copyright &copy; <a href="https://github.com/Gansche" target="_blank" rel="noopener">2023 Gansche</a>
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gansche
+
+#[Markdown]
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  
