@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://Gansche.github.io/cour_note/</loc>
+         <loc>https://Gansche.github.io/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Gansche.github.io/cour_note/ComputerOrganization/Chapter00/</loc>
+         <loc>https://Gansche.github.io/cour_note/AdvancedDataStruct/Chapter00/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Gansche.github.io/cour_note/Cryptography/Chapter00/</loc>
+         <loc>https://Gansche.github.io/cour_note/ComputerOrganization/Chapter01/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Gansche.github.io/cour_note/ComputerOrganization/Information/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Gansche.github.io/cour_note/Cryptography/Chapter01/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Gansche.github.io/cour_note/Cryptography/Information/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
