@@ -1,0 +1,17 @@
+#[Site Info]
+site_name: Gansche's TechStack
+site_url: https://Gansche.github.io
+site_author: Zhiuyuan Fang
+
+#[Repository Info]
+repo_name: Gansche.github.io
+repo_url: https://github.com/Gansche/Gansche.github.io.git
+
+#[Copyright]
+copyright: Copyright &copy; <a href="https://github.com/Gansche" target="_blank" rel="noopener">2024 Gansche</a>
+
+#[UI]
+theme:
+  name: material
+
+#[Navigation]
