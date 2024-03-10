@@ -1,1 +1,5 @@
-site/
+/*
+!/docs
+!/mkdocs.yml
+!/.gitignore
+!/.github
