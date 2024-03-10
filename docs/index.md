@@ -1,5 +1,8 @@
 # Welcome to MkDocs
 
+!!!note
+hello mkdocs
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
