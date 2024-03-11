@@ -11,7 +11,113 @@ repo_url: https://github.com/Gansche/Gansche.github.io.git
 copyright: Copyright &copy; <a href="https://github.com/Gansche" target="_blank" rel="noopener">2024 Gansche</a>
 
 #[UI]
-theme:
+theme: 
   name: material
+  language: en
+  custom_dir: overrides
+  #TODO:change the font
+  palette: 
+    #TODO:change the color
+    #TODO:auto-change color mode
+    - scheme: default
+      primary: light green
+      accent: deep orange
+  direction: ltr
+  icon:
+    logo: material/taco
+    repo: fontawesome/brands/github-alt
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+
+#[CSS]
+#TODO:figure out how it works
+extra_css:
+  - css/basic.css
+  - css/admonition.css
+  - css/flink.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
+
+#[JavaScropt]
+extra_javascript:
+  - ""
+
+#[Plugins]
+plugins: 
+  - search
+
+
+#[Markdown Extensions]
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Content
+  - tables
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbr.md
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      # linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - meta
 
 #[Navigation]
+nav:
+  - Home Page:
+    - index.md
+  - Paper Reading:
+    - index.md
+  - Notes:
+    - index.md
