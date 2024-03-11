@@ -1,6 +1,7 @@
 /*
 !/docs
+!/overrides
 !/mkdocs.yml
+!/README.md
 !/.gitignore
 !/.github
-!/README.md
