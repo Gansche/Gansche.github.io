@@ -77,9 +77,9 @@ extra:
 #TODO:figure out how it works
 extra_css:
   - css/basic.css
-  - css/admonition.css
-  - css/flink.css
-  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
+  # - css/admonition.css
+  # - css/flink.css
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
 
 #[JavaScropt]
 extra_javascript:
