@@ -8,24 +8,24 @@ repo_name: Gansche.github.io
 repo_url: https://github.com/Gansche/Gansche.github.io.git
 
 #[Copyright]
-copyright: Copyright &copy; <a href="https://github.com/Gansche" target="_blank" rel="noopener">2024 Gansche</a>
+copyright: Copyright &copy; 2024 Gansche
 
 #[UI]
 theme: 
   name: material
+  logo: icon.png
+  favicon: icon.png
   language: en
-  custom_dir: overrides
-  #TODO:change the font
-  palette: 
-    #TODO:change the color
-    #TODO:auto-change color mode
-    - scheme: default
-      primary: light green
-      accent: deep orange
   direction: ltr
+
+  palette: 
+    - scheme: default
+      primary: white
+      accent: deep orange
   icon:
-    logo: material/taco
-    repo: fontawesome/brands/github-alt
+    repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
@@ -41,15 +41,38 @@ theme:
       quote: fontawesome/solid/quote-left
   features:
     - content.code.annotate
+    - content.code.copy
     - content.tooltips
-    - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.indexes
     - navigation.top
     - search.highlight
     - search.share
     - search.suggest
+  custom_dir: overrides
 
+#[Extra]
+extra: 
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gansche
+      name: Github
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<zhiyuanfang413@gmail.com>
+      name: E-Mail
+  analytics: 
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            <a href="https://github.com/Gansche/Gansche.github.io" target="_blank" rel="noopener">👉 Maybe a star?</a>
+  
 #[CSS]
 #TODO:figure out how it works
 extra_css:
@@ -92,8 +115,8 @@ markdown_extensions:
       mode: view
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
@@ -117,7 +140,5 @@ markdown_extensions:
 nav:
   - Home Page:
     - index.md
-  - Paper Reading:
-    - index.md
-  - Notes:
-    - index.md
+  - Knowledge:
+    - knowledge/autoencoders.md
