@@ -1,0 +1,137 @@
+/* copy from IsshikiHuge and sakuratsuyu */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+:root {
+    --text-font-size: 16px;
+    --md-text-font: 'Merriweather', 'Noto Serif SC', 'Noto Serif JP';
+    --md-code-font: 'Roboto Mono';
+}
+
+.md-ellipsis {
+    font-size: larger;
+}
+
+.md-nav__link {
+    font-size: small;
+}
+
+body {
+    font-weight: light;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    margin: 0;
+}
+p {
+    font-size: var(--text-font-size);
+}
+
+.md-content ul, .md-content ol {
+    font-size: var(--text-font-size);
+}
+
+.arithmatex {
+    font-size: var(--text-font-size);
+}
+
+.highlight span.filename {
+    font-size: var(--text-font-size);
+}
+
+:root,
+[data-md-color-scheme=default] {
+    /* --md-default-fg-color: rgba(72, 52, 52, .78);
+    --md-default-fg-color--light: rgba(72, 52, 52, .54);
+    --md-default-fg-color--lighter: rgba(72, 52, 52, .32);
+    --md-default-fg-color--lightest: rgba(72, 52, 52, .27); */
+
+    --md-default-bg-color: white;
+    --md-default-bg-color--light: hsla(0, 0%, 100%, .7);
+    --md-default-bg-color--lighter: hsla(0, 0%, 100%, .3);
+    --md-default-bg-color--lightest: hsla(0, 0%, 100%, .12);
+
+    --md-primary-fg-color: #8dad43;
+    --md-primary-fg-color--light: #b2cc77;
+    --md-primary-fg-color--dark: #b2cc77;
+    
+    --md-primary-bg-color: white;
+    --md-primary-bg-color--light: hsla(0, 0%, 100%, .7);
+    
+    --md-accent-fg-color: #b1c1a2;
+    --md-accent-fg-color--light: #809A6F;
+    --md-accent-fg-color--transparent: rgba(82, 108, 254, .1);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: hsla(0, 0%, 100%, .7);
+
+    /* --md-code-fg-color: #66806A;
+    --md-code-bg-color: #FFF3E4;
+    --md-code-hl-color: #d7e1c3; */
+    --md-code-hl-number-color: #d52a2a;
+    --md-code-hl-special-color: #db1457;
+    --md-code-hl-function-color: #a846b9;
+    --md-code-hl-constant-color: #6e59d9;
+    --md-code-hl-keyword-color: #3f6ec6;
+    --md-code-hl-string-color: #1c7d4d;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-accent-fg-color--light);
+    --md-typeset-mark-color: rgba(255, 179, 0, 0.5);
+    --md-typeset-del-color: rgba(245, 80, 61, .15);
+    --md-typeset-ins-color: rgba(11, 213, 112, .15);
+    --md-typeset-kbd-color: #fafafa;
+    --md-typeset-kbd-accent-color: #fff;
+    --md-typeset-kbd-border-color: #b8b8b8;
+    --md-typeset-table-color: rgba(0, 0, 0, .12);
+
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-admonition-bg-color: white;
+
+    --md-footer-fg-color: #fff;
+    --md-footer-fg-color--light: hsla(0, 0%, 100%, .7);
+    --md-footer-fg-color--lighter: hsla(0, 0%, 100%, .3);
+    --md-footer-bg-color: rgba(0, 0, 0, .87);
+    --md-footer-bg-color--dark: rgba(0, 0, 0, .32);
+    
+    --md-shadow-z1: 1px 1px 3px #fff5ee, 1px 1px 5px #e1d0c5;
+    --md-shadow-z2: 1px 1px 3px #fff5ee, 2px 2px 7px #cebeb3;
+    --md-shadow-z3: 1px 1px 3px #fff5ee, 2px 2px 9px #cebeb3;
+}
+
+
+
+.md-tabs {
+    background-color: var(--md-primary-fg-color--light);
+}
+
+/* advice */
+
+:root {
+    --md-admonition-icon--todo: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 11h-4v4h-2v-4H9V9h4V5h2v4h4m1-7H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M4 6H2v14a2 2 0 0 0 2 2h14v-2H4V6Z"/></svg>')
+}
+
+.md-typeset .admonition.todo,
+.md-typeset details.todo {
+    border-color: #59AC80;
+}
+
+.md-typeset .todo>.admonition-title,
+.md-typeset .todo>summary {
+    background-color: #e8fae3;
+}
+
+.md-typeset .todo>.admonition-title::before,
+.md-typeset .todo>summary::before {
+    background-color: #59AC80;
+    -webkit-mask-image: var(--md-admonition-icon--todo);
+    mask-image: var(--md-admonition-icon--todo);
+}
+
+
