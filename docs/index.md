@@ -5,12 +5,8 @@ hide:
 
 # Welcome to Gansche's TechStack
 
-!!!defination
+!!!todo
     Home Page is Constructing...
-
-
-
-
 
 
 

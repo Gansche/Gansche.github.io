@@ -1,6 +1,0 @@
----
-hide:
-  - feedback
----
-
-#TODO List

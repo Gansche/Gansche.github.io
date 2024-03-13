@@ -10,8 +10,7 @@
     --md-code-font: 'Roboto Mono';
 }
 
-.md-ellipsis,
-.headerlink {
+.md-ellipsis {
     font-size: larger;
 }
 
@@ -43,21 +42,21 @@ p {
 
 :root,
 [data-md-color-scheme=default] {
-    --md-default-fg-color: rgba(72, 52, 52, .78);
+    /* --md-default-fg-color: rgba(72, 52, 52, .78);
     --md-default-fg-color--light: rgba(72, 52, 52, .54);
     --md-default-fg-color--lighter: rgba(72, 52, 52, .32);
-    --md-default-fg-color--lightest: rgba(72, 52, 52, .27);
+    --md-default-fg-color--lightest: rgba(72, 52, 52, .27); */
 
-    --md-default-bg-color: #fffaf5;
+    --md-default-bg-color: white;
     --md-default-bg-color--light: hsla(0, 0%, 100%, .7);
     --md-default-bg-color--lighter: hsla(0, 0%, 100%, .3);
     --md-default-bg-color--lightest: hsla(0, 0%, 100%, .12);
 
     --md-primary-fg-color: #8dad43;
     --md-primary-fg-color--light: #b2cc77;
-    --md-primary-fg-color--dark: #806b65;
+    --md-primary-fg-color--dark: #b2cc77;
     
-    --md-primary-bg-color: #FDF6EC;
+    --md-primary-bg-color: white;
     --md-primary-bg-color--light: hsla(0, 0%, 100%, .7);
     
     --md-accent-fg-color: #b1c1a2;
@@ -66,9 +65,9 @@ p {
     --md-accent-bg-color: #fff;
     --md-accent-bg-color--light: hsla(0, 0%, 100%, .7);
 
-    --md-code-fg-color: #66806A;
+    /* --md-code-fg-color: #66806A;
     --md-code-bg-color: #FFF3E4;
-    --md-code-hl-color: #d7e1c3;
+    --md-code-hl-color: #d7e1c3; */
     --md-code-hl-number-color: #d52a2a;
     --md-code-hl-special-color: #db1457;
     --md-code-hl-function-color: #a846b9;
@@ -93,7 +92,7 @@ p {
     --md-typeset-table-color: rgba(0, 0, 0, .12);
 
     --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: #fff9f4;
+    --md-admonition-bg-color: white;
 
     --md-footer-fg-color: #fff;
     --md-footer-fg-color--light: hsla(0, 0%, 100%, .7);
@@ -112,26 +111,27 @@ p {
     background-color: var(--md-primary-fg-color--light);
 }
 
-
-/* definition */
+/* advice */
 
 :root {
-    --md-admonition-icon--definition: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.5 21 12 3.5 22.5 21h-21M12 21l5-9H7l5 9Z"/></svg>')
+    --md-admonition-icon--todo: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 11h-4v4h-2v-4H9V9h4V5h2v4h4m1-7H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M4 6H2v14a2 2 0 0 0 2 2h14v-2H4V6Z"/></svg>')
 }
 
-.md-typeset .admonition.definition,
-.md-typeset details.definition {
-    border-color: #d2b300;
+.md-typeset .admonition.todo,
+.md-typeset details.todo {
+    border-color: #59AC80;
 }
 
-.md-typeset .definition>.admonition-title,
-.md-typeset .definition>summary {
-    background-color: #fbffde;
+.md-typeset .todo>.admonition-title,
+.md-typeset .todo>summary {
+    background-color: #e8fae3;
 }
-    
-.md-typeset .definition>.admonition-title::before,
-.md-typeset .definition>summary::before {
-    background-color: #d2b300;
-    -webkit-mask-image: var(--md-admonition-icon--definition);
-    mask-image: var(--md-admonition-icon--definition);
+
+.md-typeset .todo>.admonition-title::before,
+.md-typeset .todo>summary::before {
+    background-color: #59AC80;
+    -webkit-mask-image: var(--md-admonition-icon--todo);
+    mask-image: var(--md-admonition-icon--todo);
 }
+
+

@@ -42,6 +42,7 @@ theme:
   features:
     - content.code.annotate
     - content.code.copy
+    - content.code.select
     - content.tooltips
     - navigation.tracking
     - navigation.tabs
@@ -76,7 +77,6 @@ extra:
 #TODO:figure out how it works
 extra_css:
   - css/basic.css
-  - css/flink.css
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
@@ -138,8 +138,8 @@ markdown_extensions:
 
 #[Navigation]
 nav:
-  - Home Page:
+  - Home:
     - index.md
-    - TODO List: TODO.md
   - Knowledge:
     - knowledge/autoencoders.md
+  # - Papers:
