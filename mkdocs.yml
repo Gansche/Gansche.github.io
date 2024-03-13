@@ -20,8 +20,8 @@ theme:
 
   palette: 
     - scheme: default
-      primary: white
-      accent: deep orange
+      primary: green
+      accent: green 
   icon:
     repo: fontawesome/brands/github
     previous: fontawesome/solid/angle-left
@@ -68,7 +68,6 @@ extra:
       title: Was this page helpful?
       ratings:
         - icon: material/thumb-up-outline
-          name: This page was helpful
           data: 1
           note: >-
             <a href="https://github.com/Gansche/Gansche.github.io" target="_blank" rel="noopener">👉 Maybe a star?</a>
@@ -77,13 +76,14 @@ extra:
 #TODO:figure out how it works
 extra_css:
   - css/basic.css
-  # - css/admonition.css
-  # - css/flink.css
-  # - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
+  - css/flink.css
+  - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 
 #[JavaScropt]
 extra_javascript:
-  - ""
+  - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js
 
 #[Plugins]
 plugins: 
@@ -140,5 +140,6 @@ markdown_extensions:
 nav:
   - Home Page:
     - index.md
+    - TODO List: TODO.md
   - Knowledge:
     - knowledge/autoencoders.md

@@ -5,21 +5,13 @@ hide:
 
 # Welcome to Gansche's TechStack
 
-$$
-\Sigma XYZ
-$$
+!!!info ""
+    ==TODO:字体和语言CSS整合==
+    
+    ==TODO：函调，创新创业，出国，周六的会==
 
-```c++
-int a{
+    
+!!!warning
 
-}
-```
 
-!!!info
-	!!!warning
-		!!!bug
-
-==TODO:字体和语言CSS整合==
-
-==TODO：函调，创新创业，出国，周六的会==
 

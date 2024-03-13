@@ -1,3 +1,4 @@
+/* copy from IsshikiHuge and sakuratsuyu */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,300;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
@@ -22,19 +23,6 @@
 	--md-default-bg-color: #fff;
 }
 
-[data-md-color-primary=dark] {
-	--md-primary-fg-color: #1b2430;
-    /* --md-primary-fg-color: #404258; */
-    --md-primary-fg-color--light: rgba(0,0,0,.54);
-    --md-primary-fg-color--dark: #000;
-    --md-primary-bg-color: #fff;
-    --md-primary-bg-color--light: hsla(0,0%,100%,.7);
-    --md-typeset-a-color: #4051b5;
-}
-
-:root, [data-md-color-scheme=slate] {
-	--md-default-bg-color: hsla(var(--md-hue),15%,21%,1);
-}
 
 body {
     font-weight: light;
